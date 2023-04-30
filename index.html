@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FORMULARIO</title>
+    <script src="https://kit.fontawesome.com/b0e6ca1384.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/samples.css">
+  <link rel="stylesheet" href="css/index.css">
+
+  </head>
+  <body>
+    <form action="" class="formulario" method="post" enctype="multipart/form-data">
+      <center>
+      <div class="imagen">
+        <img src="https://i.ibb.co/c3n1VZm/logo-leon-4.png" alt="logo-leon-4" width="300px" />
+      </div>
+    </center>
+    <h1 class="formulario__titulo">INFORMACION DEL PRODUCTO</h1>
+    <p class="formulario__parrafo">
+     <strong>Este espacio es para el producto que deseas,diligenciar los campos correspondientes, los campos con * es obligatorio</strong>
+    </p>
+ 
+
+    
+     
+    <label for="codigo" class="formulario__label"> <i class="fa-solid fa-tag" style="color:brown"></i>&nbsp;&nbsp;<strong>CODIGO DEL PRODUCTO*</strong></label>
+    <input id="codigo" type="text" class="formulario__input" required=""/>
+
+
+    <label for="Talla" class="formulario__label"><i class="fa-brands fa-algolia" style="color:brown"></i>&nbsp;&nbsp;<strong>TALLA</strong></label>
+    <select id="talla" name="talla" class="formulario__input" aria-placeholder="Talla">
+      <option>Solo si aplica</option>
+      <option>S</option>
+      <option>M</option>
+      <option>L</option>
+      <option>X</option>
+      <option>XL</option>
+      <option>XXL</option>
+    </select>
+
+    <label for="numero de calzado" class="formulario__label"><i class="fa-brands fa-algolia" style="color:brown"></i>&nbsp;&nbsp;<strong>NUMERO DE CALZADO</strong></label>
+    <select id="numerodecalzado" name="numero de calzado" class="formulario__input" aria-placeholder="numero de calzado">
+      <option>Solo si aplica</option>
+      <option>35</option>
+      <option>36</option>
+      <option>37</option>
+      <option>38</option>
+      <option>39</option>
+      <option>40</option>
+      <option>41</option>
+      <option>42</option>
+      <option>43</option>
+      <option>44</option>
+    </select>
+  
+
+    <label for="color" class="formulario__label"><i class="fa-solid fa-circle-half-stroke" style="color:brown">&nbsp;&nbsp;</i><strong>COLOR</strong></label>
+    <input id="color" type="text" class="formulario__input" placeholder="Solo si aplica"/>
+
+    
+    <label for="observaciones" class="formulario__label"><i class="fa-solid fa-pen" style="color:brown">&nbsp;&nbsp;</i><strong>OBSERVACIONES</strong></label>
+    <textarea class="formulario__input" name="textoArea" id="observaciones" cols="95" rows="4"></textarea>
+    <div class="div_centrado borde fondo_deg">
+
+
+      <div id="respuesta"></div>
+      <button id="submit" class="formulario__submit" onclick="return validar();">Enviar a WhatsApp</button>
+
+      
+    </form>
+    <script src="js/form.js"></script>
+  </body>
+</html>
+
+
+  
+
+
